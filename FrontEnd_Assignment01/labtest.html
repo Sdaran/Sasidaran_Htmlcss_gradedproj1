@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lab Test Form</title>
+  <link rel="stylesheet" href="css/style2.css">
+
+</head>
+
+<body>
+  <div class="mainscreen">
+    <div class="card">
+      <div class="leftside">
+
+
+        <form id="myform" method="get" action="">
+
+          <section class="formsection">
+            <h1 class="form_heading">1.Your Contact Details</h1>
+            <div class="form_container">
+
+              <div class="input_box">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" required minlength="4" placeholder="Full Name" maxlength="8" size="10">
+              </div>
+
+
+              <div class="input_box">
+                <label for="name"></label>
+                <input type="text" id="name" name="name" required minlength="4" placeholder="Patient Id if Exists" maxlength="8" size="10">
+              </div>
+
+              <div class="input_box">
+                <label for="phone"></label>
+                <input type="tel" id="phone" name="phone" placeholder="Contact Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+              </div>
+
+              <div class="input_box">
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="E-mail ID" pattern=".+@globex\.com" size="30" required>
+              </div>
+
+            </div>
+          </section>
+
+
+
+
+          <section class="formsection">
+            <h1 class="form_heading">2. Address</h1>
+            <div class="form_container">
+
+              <div class="input_box">
+                <label for="housenumber"></label>
+                <input type="number" id="housenumber" placeholder="H-No." name="housenumber" min="1" max="5">
+              </div>
+
+
+              <div class="input_box">
+                <label for="street"></label>
+                <input type="text" id="street" placeholder="Street" name="street" required minlength="2" maxlength="8" size="10">
+              </div>
+
+              <div class="input_box">
+                <label for="area"></label>
+                <input type="text" id="area" placeholder="Area" name="area" required minlength="2" maxlength="18" size="20">
+              </div>
+
+
+
+            </div>
+          </section>
+
+          <section class="dropdownform">
+
+            <div class="district_dropdown">
+
+              <h2>District</h2>
+              <label for="district"></label>
+
+              <select name="district" id="district">
+                <option value="">Please choose an option</option>
+                <option value="Chelsea">Chelsea</option>
+                <option value="Leith">Leith</option>
+                <option value="Station District">Station District</option>
+                <option value="Andersonville">Andersonville</option>
+                <option value="Ngor">Ngor</option>
+                <option value="Nørrebro">Nørrebro</option>
+              </select>
+            </div>
+          </section>
+
+
+          <section class="form_testreport">
+            <h1 class="form_heading">3. Choose the test type</h1>
+            <small>Check atleast one box without fail</small>
+            <div class="form_container">
+
+              <div class="form_checkbox">
+
+                <div>
+                  <input type="checkbox" id="cbc" name="cbc">
+                  <label for="cbc">CBC</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="complete_urine" name="complete_urine">
+                  <label for="complete_urine">Complete Urine</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="lipid_profile" name="lipid_profile">
+                  <label for="lipid_profile">Lipid Profile Urine</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="tsh" name="tsh">
+                  <label for="tsh">Thyroid Simulating Horomone(TSH)</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" id="glucose_test" name="glucose_test">
+                  <label for="glucose_test">Glucose Test</label>
+                </div>
+
+              </div>
+
+
+
+              <div class="form_radiobutton">
+                <h1>4. Do you want the hard copy of the report also</h1>
+
+                <div>
+                  <input type="radio" id="yes" name="drone" value="yes" checked>
+                  <label for="yes">Yes</label>
+                </div>
+
+                <div>
+                  <input type="radio" id="no" name="drone" value="no">
+                  <label for="no">No</label>
+                </div>
+              </div>
+
+
+
+            </div>
+          </section>
+
+
+
+
+
+
+          <section class="date_time">
+            <h1>5. Select your comfortable date and time</h1>
+            <div class="form_date">
+              <label for="start">Appointment Date</label>
+
+              <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+            </div>
+            <div class="form_time">
+              <label for="appt">Appointment Time</label>
+
+              <input type="time" id="appt" name="appt" min="09:00" max="18:00" required>
+
+            </div>
+          </section>
+
+
+
+
+
+        </form>
+      </div>
+
+
+
+
+      <div class="rightside">
+
+        <img src="Images/Lab-Test/lab-test.jpg" alt="labtest image" />
+
+      </div>
+
+    </div>
+  </div>
+
+  <section class="form_button">
+
+    <input type="reset" form="myform" class="button" value="Reset">
+
+    <button type="submit" form="myform" class="button" value="submit">Submit</button>
+
+  </section>
+
+</body>
+
+</html>
